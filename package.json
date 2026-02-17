@@ -1,0 +1,12 @@
+{
+  "name": "servicios-escolares-enp8",
+  "version": "1.0.0",
+  "description": "Redesign of Servicios Escolares for ENP 8",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
