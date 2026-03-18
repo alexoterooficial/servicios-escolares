@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         'unam-blue': '#084877',
         'unam-gold': '#d4af37',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../assets/img/hero-bg.webp')",
       }
     },
   },
