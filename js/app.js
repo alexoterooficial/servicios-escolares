@@ -199,13 +199,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Drawer Logic & A11y ---
-    function openDrawer(item, buttonElement) {
-        lastFocusedElement = buttonElement;
+    function openDrawer(item, buttonElement, updateUrl = true) {
+        lastFocusedElement = buttonElement || null;
         
         // Update DOM elements
-        buttonElement.setAttribute('aria-expanded', 'true');
+        if (lastFocusedElement) {
+            lastFocusedElement.setAttribute('aria-expanded', 'true');
+        }
         
         drawerTitle.textContent = item.title;
+        document.title = item.title + " - ENP Plantel 8";
+
+        if (updateUrl) {
+            const url = new URL(window.location);
+            url.searchParams.set('item', item.id);
+            history.pushState({ item: item.id }, '', url);
+        }
         
         let contentHtml = '';
         
@@ -326,9 +335,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300); // Wait for transition
     }
 
-    function closeDrawer() {
+    function closeDrawer(eventOrUpdateUrl) {
+        const updateUrl = typeof eventOrUpdateUrl === 'boolean' ? eventOrUpdateUrl : true;
+
         if (lastFocusedElement) {
             lastFocusedElement.setAttribute('aria-expanded', 'false');
+        }
+
+        document.title = "Servicios Escolares - ENP Plantel 8";
+
+        if (updateUrl) {
+            const url = new URL(window.location);
+            url.searchParams.delete('item');
+            history.replaceState(null, '', url.pathname + url.search);
         }
 
         // Restore body scroll
@@ -359,10 +378,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- Manejo de Navegación (Popstate) ---
+    window.addEventListener('popstate', (e) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemId = urlParams.get('item');
+        if (itemId) {
+            let foundItem = null;
+            for (const cat of servicesData) {
+                const item = cat.items.find(i => i.id === itemId);
+                if (item) {
+                    foundItem = item;
+                    break;
+                }
+            }
+            if (foundItem) {
+                openDrawer(foundItem, null, false); // false para no volver a hacer pushState
+            }
+        } else {
+            if (!detailsDrawer.classList.contains('hidden')) {
+                closeDrawer(false); // false para no volver a hacer replaceState
+            }
+        }
+    });
+
     // Initialize
     if (typeof servicesData !== 'undefined') {
         renderTabs();
         renderServices();
+        
+        // --- Sincronización de Entrada (Deep Linking) ---
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemId = urlParams.get('item');
+        if (itemId) {
+            let foundItem = null;
+            for (const cat of servicesData) {
+                const item = cat.items.find(i => i.id === itemId);
+                if (item) {
+                    foundItem = item;
+                    break;
+                }
+            }
+            // Retraso ligero para permitir pintar la UI del HTML base
+            if (foundItem) {
+                setTimeout(() => openDrawer(foundItem, null, false), 50);
+            }
+        }
     }
 
     // --- Footer intersection to hide pills-nav ---
