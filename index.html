@@ -15,7 +15,7 @@
 
     <!-- Header / Navbar -->
     <header id="main-header"
-        class="bg-white dark:bg-slate-800 sticky top-0 z-50 border-b border-transparent dark:border-slate-700">
+        class="bg-white dark:bg-slate-800 sticky top-0 z-[80] border-b border-transparent dark:border-slate-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1356 768"
@@ -187,24 +187,85 @@
                 </h1>
             </div>
 
-            <button id="themeToggle"
-                class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold"
-                aria-label="Cambiar tema">
-                <!-- Sun Icon -->
-                <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-                    </path>
-                </svg>
-                <!-- Moon Icon -->
-                <svg class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
-                    </path>
-                </svg>
-            </button>
+            <!-- Navegación Desktop -->
+            <nav class="hidden xl:flex items-center space-x-6 text-[15px] font-medium text-slate-600 dark:text-slate-300">
+                <a href="http://prepa8.unam.mx/p8/" class="hover:text-unam-blue dark:hover:text-white transition-colors">Inicio</a>
+                <a href="http://prepa8.unam.mx/p8/alumnos" class="hover:text-unam-blue dark:hover:text-white transition-colors">Estudiantado</a>
+                <a href="http://prepa8.unam.mx/p8/padres" class="hover:text-unam-blue dark:hover:text-white transition-colors">Padres</a>
+                <a href="http://prepa8.unam.mx/p8/profesores" class="hover:text-unam-blue dark:hover:text-white transition-colors">Planta Docente</a>
+                <a href="http://prepa8.unam.mx/p8/cultura" class="hover:text-unam-blue dark:hover:text-white transition-colors">Cultura</a>
+                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero" class="hover:text-unam-blue dark:hover:text-white transition-colors">Igualdad de Género</a>
+                <a href="http://prepa8.unam.mx/p8/deportes" class="hover:text-unam-blue dark:hover:text-white transition-colors">Deportes</a>
+                <a href="http://prepa8.unam.mx/p8/plantel" class="hover:text-unam-blue dark:hover:text-white transition-colors">Plantel</a>
+            </nav>
+
+            <div class="flex items-center space-x-2">
+                <button id="themeToggle"
+                    class="relative z-[80] p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold"
+                    aria-label="Cambiar tema">
+                    <!-- Sun Icon -->
+                    <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                        </path>
+                    </svg>
+                </button>
+
+                <!-- Menú Hamburguesa Toggle -->
+                <button id="mobileMenuToggle"
+                    class="relative z-[80] xl:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold transition-colors"
+                    aria-label="Alternar menú">
+                    <div class="w-6 h-6 relative">
+                        <svg id="icon-menu" class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-100 scale-100 rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="icon-close" class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-0 scale-0 -rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawerBackdrop" class="fixed top-16 inset-x-0 bottom-0 bg-slate-900/50 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true"></div>
+    <div id="mobileDrawerPanel" class="fixed top-16 right-0 bottom-0 z-[70] w-full max-w-xs bg-white dark:bg-slate-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" tabindex="-1">
+        <div class="flex-1 overflow-y-auto px-6 py-8">
+            <nav class="flex flex-col space-y-6">
+                <a href="http://prepa8.unam.mx/p8/" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Inicio
+                </a>
+                <a href="http://prepa8.unam.mx/p8/alumnos" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Estudiantado
+                </a>
+                <a href="http://prepa8.unam.mx/p8/padres" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Padres
+                </a>
+                <a href="http://prepa8.unam.mx/p8/profesores" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Planta Docente
+                </a>
+                <a href="http://prepa8.unam.mx/p8/cultura" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Cultura
+                </a>
+                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Igualdad de Género
+                </a>
+                <a href="http://prepa8.unam.mx/p8/deportes" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Deportes
+                </a>
+                <a href="http://prepa8.unam.mx/p8/plantel" class="flex items-center text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors group">
+                    <span class="w-2 h-2 rounded-full bg-unam-gold opacity-0 group-hover:opacity-100 transition-opacity mr-3"></span> Plantel
+                </a>
+            </nav>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="flex-grow w-full py-8 md:py-12">

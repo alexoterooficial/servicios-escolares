@@ -371,10 +371,108 @@ document.addEventListener('DOMContentLoaded', () => {
     closeDrawerBtn.addEventListener('click', closeDrawer);
     drawerBackdrop.addEventListener('click', closeDrawer);
 
+    // --- Menú Hamburguesa (Mobile Navigation) ---
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+    const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+    const mobileDrawerPanel = document.getElementById('mobileDrawerPanel');
+    let lastMenuFocusedElement = null;
+
+    function openMobileMenu() {
+        lastMenuFocusedElement = document.activeElement;
+        
+        // Evitar el scroll de la página detrás del menú
+        document.body.classList.add('overflow-hidden');
+        
+        // Show Backdrop
+        mobileDrawerBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+        mobileDrawerBackdrop.classList.add('opacity-100', 'pointer-events-auto');
+        
+        // Slide in panel
+        mobileDrawerPanel.classList.remove('translate-x-full');
+        mobileDrawerPanel.classList.add('translate-x-0');
+        
+        // Transform button icon
+        if (iconMenu && iconClose) {
+            iconMenu.classList.replace('opacity-100', 'opacity-0');
+            iconMenu.classList.replace('scale-100', 'scale-0');
+            iconMenu.classList.replace('rotate-0', 'rotate-90');
+            
+            iconClose.classList.replace('opacity-0', 'opacity-100');
+            iconClose.classList.replace('scale-0', 'scale-100');
+            iconClose.classList.replace('-rotate-90', 'rotate-0');
+        }
+    }
+
+    function closeMobileMenu() {
+        // Restaurar body scroll SÓLO si el otro drawer (details) también está cerrado
+        if (detailsDrawer && detailsDrawer.classList.contains('hidden')) {
+            document.body.classList.remove('overflow-hidden');
+        }
+        
+        // Hide Backdrop
+        mobileDrawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        mobileDrawerBackdrop.classList.add('opacity-0', 'pointer-events-none');
+        
+        // Slide out panel
+        mobileDrawerPanel.classList.remove('translate-x-0');
+        mobileDrawerPanel.classList.add('translate-x-full');
+        
+        // Transform button icon back
+        if (iconMenu && iconClose) {
+            iconMenu.classList.replace('opacity-0', 'opacity-100');
+            iconMenu.classList.replace('scale-0', 'scale-100');
+            iconMenu.classList.replace('rotate-90', 'rotate-0');
+            
+            iconClose.classList.replace('opacity-100', 'opacity-0');
+            iconClose.classList.replace('scale-100', 'scale-0');
+            iconClose.classList.replace('rotate-0', '-rotate-90');
+        }
+        
+        setTimeout(() => {
+            if (lastMenuFocusedElement) {
+                lastMenuFocusedElement.focus();
+                lastMenuFocusedElement = null;
+            }
+        }, 300);
+    }
+
+    if (mobileMenuToggle && mobileDrawerBackdrop) {
+        mobileMenuToggle.addEventListener('click', () => {
+            if (mobileDrawerPanel.classList.contains('translate-x-full')) {
+                openMobileMenu();
+            } else {
+                closeMobileMenu();
+            }
+        });
+        mobileDrawerBackdrop.addEventListener('click', closeMobileMenu);
+        
+        // Cerrar menú al presionar un enlace interior
+        const mobileLinks = mobileDrawerPanel.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    }
+
+    // Auto-cerrar menú al regresar a tamaño Desktop (xl)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1280) {
+            if (mobileDrawerPanel && !mobileDrawerPanel.classList.contains('translate-x-full')) {
+                closeMobileMenu();
+            }
+        }
+    });
+
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !detailsDrawer.classList.contains('hidden')) {
-            closeDrawer();
+        if (e.key === 'Escape') {
+            if (detailsDrawer && !detailsDrawer.classList.contains('hidden')) {
+                closeDrawer();
+            }
+            if (mobileDrawerBackdrop && !mobileDrawerBackdrop.classList.contains('opacity-0')) {
+                closeMobileMenu();
+            }
         }
     });
 
