@@ -169,10 +169,10 @@ const servicesData = [
           ]
         }
       },
-      { 
-        "id": "A7", 
-        "title": "Inscripciones a Actividades Estéticas", 
-        "summary": "Sistema de registro para los talleres artísticos y culturales obligatorios del plantel.", 
+      {
+        "id": "A7",
+        "title": "Inscripciones a Actividades Estéticas",
+        "summary": "Sistema de registro para los talleres artísticos y culturales obligatorios del plantel.",
         "detailedInfo": {
           "atomicId": "A7",
           "icon": "🎭",
@@ -218,10 +218,10 @@ const servicesData = [
           "actionText": "Trámite presencial en ventanilla de Servicios Escolares"
         }
       },
-      { 
-        "id": "I2", 
-        "title": "Constancia Credencial del Plantel", 
-        "summary": "Documento provisional que funge como identificación para ingresar al plantel si extraviaste tu credencial.", 
+      {
+        "id": "I2",
+        "title": "Constancia Credencial del Plantel",
+        "summary": "Documento provisional que funge como identificación para ingresar al plantel si extraviaste tu credencial.",
         "detailedInfo": {
           "atomicId": "I2",
           "icon": "🪪",
@@ -239,10 +239,10 @@ const servicesData = [
           "actionText": "Trámite presencial en ventanilla de Servicios Escolares"
         }
       },
-      { 
-        "id": "I3", 
-        "title": "Reposición Credencial de la UNAM", 
-        "summary": "Procedimiento oficial para recuperar tu credencial universitaria por robo o extravío.", 
+      {
+        "id": "I3",
+        "title": "Reposición Credencial de la UNAM",
+        "summary": "Procedimiento oficial para recuperar tu credencial universitaria por robo o extravío.",
         "detailedInfo": {
           "atomicId": "I3",
           "icon": "💳",
@@ -260,10 +260,10 @@ const servicesData = [
           "actionText": "Trámite presencial en Rectoría (pagos) y Servicios Escolares (entrega)"
         }
       },
-      { 
-        "id": "I4", 
-        "title": "Solicitud de Certificado de Bachillerato", 
-        "summary": "Requisitos y formato oficial para solicitar tu certificado de estudios al concluir la preparatoria.", 
+      {
+        "id": "I4",
+        "title": "Solicitud de Certificado de Bachillerato",
+        "summary": "Requisitos y formato oficial para solicitar tu certificado de estudios al concluir la preparatoria.",
         "detailedInfo": {
           "atomicId": "I4",
           "icon": "🎓",
@@ -285,10 +285,10 @@ const servicesData = [
           "actionUrl": "assets/descargas/SOLICITUD DE CERTIFICADO_2025.pdf"
         }
       },
-      { 
-        "id": "I5", 
-        "title": "Pase Reglamentado", 
-        "summary": "Cronograma y documentos del procedimiento para tu ingreso a nivel Licenciatura desde la prepa.", 
+      {
+        "id": "I5",
+        "title": "Pase Reglamentado",
+        "summary": "Cronograma y documentos del procedimiento para tu ingreso a nivel Licenciatura desde la prepa.",
         "detailedInfo": {
           "atomicId": "I5",
           "icon": "📝",
@@ -306,26 +306,26 @@ const servicesData = [
           "actions": [
             {
               "type": "redirect",
-              "text": "¿QUÉ ONDA CON EL PASE REGLAMENTADO?",
+              "text": "¿Qué onda con el pase reglamentado?",
               "url": "https://drive.google.com/file/d/1WjBv4Ry92h6wP9e-gl3gZNzOzSxcYzVe/view?usp=sharing"
             },
             {
               "type": "redirect",
-              "text": "CONVOCATORIA PASE REGLAMENTADO (19 DE MARZO 2026)",
-              "url": "#"
+              "text": "Convocatoria Pase Reglamentado (19 de marzo 2026)",
+              "url": "https://drive.google.com/file/d/1YsTv0PfGrhB_qR8ZG005X8yqC6TQxLHA/view"
             },
             {
               "type": "redirect",
-              "text": "TRÍPTICO CON INFORMACIÓN (19 DE MARZO 2026)",
-              "url": "#"
+              "text": "Tríptico con información (19 de marzo 2026)",
+              "url": "https://drive.google.com/file/d/1AMsOPexflHgjYjIbr5H8I8wghjRtyL72/view"
             }
           ]
         }
       },
-      { 
-        "id": "I6", 
-        "title": "Validación de Certificado de Bachillerato", 
-        "summary": "Legalización y certificación de la autenticidad de tu documento original emitido.", 
+      {
+        "id": "I6",
+        "title": "Validación de Certificado de Bachillerato",
+        "summary": "Legalización y certificación de la autenticidad de tu documento original emitido.",
         "detailedInfo": {
           "atomicId": "I6",
           "icon": "✅",
@@ -346,10 +346,10 @@ const servicesData = [
           "actionUrl": "https://www.dgae.unam.mx/tramites/index.html"
         }
       },
-      { 
-        "id": "I7", 
-        "title": "Recuperación de NIP de página DGAE", 
-        "summary": "Trámite presencial para recuperar tu clave de acceso a los servicios escolares universales de la UNAM.", 
+      {
+        "id": "I7",
+        "title": "Recuperación de NIP de página DGAE",
+        "summary": "Trámite presencial para recuperar tu clave de acceso a los servicios escolares universales de la UNAM.",
         "detailedInfo": {
           "atomicId": "I7",
           "icon": "🔑",
@@ -364,10 +364,10 @@ const servicesData = [
           "actionText": "Trámite presencial en la Jefatura de Servicios Escolares"
         }
       },
-      { 
-        "id": "I8", 
-        "title": "Apostilla de Documentos Nacionales", 
-        "summary": "Certificación de las firmas de los servidores públicos federales. Hace constar la validez de tus documentos nacionales.", 
+      {
+        "id": "I8",
+        "title": "Apostilla de Documentos Nacionales",
+        "summary": "Certificación de las firmas de los servidores públicos federales. Hace constar la validez de tus documentos nacionales.",
         "detailedInfo": {
           "atomicId": "I8",
           "icon": "📜",
@@ -388,10 +388,10 @@ const servicesData = [
           "actionUrl": "https://drive.google.com/file/d/1dyLSgWamt5ujTN5NxTH9LzjeF-qaSYi_/view?usp=sharing"
         }
       },
-      { 
-        "id": "I9", 
-        "title": "Apostilla de Documentos Internacionales", 
-        "summary": "Certificación de firmas y sellos en documentos extranjeros (no certifica validez de contenido ni implica revalidación de estudios).", 
+      {
+        "id": "I9",
+        "title": "Apostilla de Documentos Internacionales",
+        "summary": "Certificación de firmas y sellos en documentos extranjeros (no certifica validez de contenido ni implica revalidación de estudios).",
         "detailedInfo": {
           "atomicId": "I9",
           "icon": "🌎",
@@ -437,10 +437,10 @@ const servicesData = [
           "actionUrl": "https://mail.google.com/a/alumno.enp.unam.mx"
         }
       },
-      { 
-        "id": "D2", 
-        "title": "Catálogo Bibliotecario", 
-        "summary": "Busca y consulta libros en la biblioteca \"Raúl Pous Ortíz\" o en toda la UNAM y accede a libros electrónicos.", 
+      {
+        "id": "D2",
+        "title": "Catálogo Bibliotecario",
+        "summary": "Busca y consulta libros en la biblioteca \"Raúl Pous Ortíz\" o en toda la UNAM y accede a libros electrónicos.",
         "detailedInfo": {
           "atomicId": "D2",
           "icon": "📖",
@@ -457,10 +457,10 @@ const servicesData = [
           "actionUrl": "https://enp8.bibliotecas.unam.mx/"
         }
       },
-      { 
-        "id": "D3", 
-        "title": "Descargas", 
-        "summary": "Repositorio de archivos de profesores, logotipos institucionales, software y fondos de pantalla.", 
+      {
+        "id": "D3",
+        "title": "Descargas",
+        "summary": "Repositorio de archivos de profesores, logotipos institucionales, software y fondos de pantalla.",
         "detailedInfo": {
           "atomicId": "D3",
           "icon": "⬇️",
@@ -477,10 +477,10 @@ const servicesData = [
           "actionUrl": "http://prepa8.unam.mx/p8/descargas"
         }
       },
-      { 
-        "id": "D4", 
-        "title": "Red Universitaria de Aprendizaje (RUA)", 
-        "summary": "Plataforma de la UNAM con recursos educativos libres y gratuitos asociados a los planes de estudio.", 
+      {
+        "id": "D4",
+        "title": "Red Universitaria de Aprendizaje (RUA)",
+        "summary": "Plataforma de la UNAM con recursos educativos libres y gratuitos asociados a los planes de estudio.",
         "detailedInfo": {
           "atomicId": "D4",
           "icon": "🌐",
@@ -497,10 +497,10 @@ const servicesData = [
           "actionUrl": "https://www.rua.unam.mx/"
         }
       },
-      { 
-        "id": "D5", 
-        "title": "Red Inalámbrica Universitaria (RIU)", 
-        "summary": "Servicio gratuito de conexión inalámbrica a Internet exclusivo para la comunidad universitaria en instalaciones de la UNAM.", 
+      {
+        "id": "D5",
+        "title": "Red Inalámbrica Universitaria (RIU)",
+        "summary": "Servicio gratuito de conexión inalámbrica a Internet exclusivo para la comunidad universitaria en instalaciones de la UNAM.",
         "detailedInfo": {
           "atomicId": "D5",
           "icon": "📶",
@@ -561,10 +561,10 @@ const servicesData = [
           "actionUrl": "http://prepa8.unam.mx/p8/alumnos/becas/benito_juarez"
         }
       },
-      { 
-        "id": "B2", 
-        "title": "Asesorías Permanentes y de Extraordinarios", 
-        "summary": "Consulta los horarios, salones y contactos para tomar asesorías de tus materias en este ciclo escolar.", 
+      {
+        "id": "B2",
+        "title": "Asesorías Permanentes y de Extraordinarios",
+        "summary": "Consulta los horarios, salones y contactos para tomar asesorías de tus materias en este ciclo escolar.",
         "detailedInfo": {
           "atomicId": "B2",
           "icon": "👨‍🏫",
@@ -582,10 +582,10 @@ const servicesData = [
           "actionUrl": "https://docs.google.com/document/d/1mv64dGS6_adyii5KGC4BfyqFwJUfFzm5/edit?usp=sharing&ouid=107969615639508392494&rtpof=true&sd=true"
         }
       },
-      { 
-        "id": "B3", 
-        "title": "Alta/Baja del Seguro IMSS Estudiantil", 
-        "summary": "Procedimientos oficiales para solicitar tu alta de seguro o suspenderlo, así como consulta de vigencia.", 
+      {
+        "id": "B3",
+        "title": "Alta/Baja del Seguro IMSS Estudiantil",
+        "summary": "Procedimientos oficiales para solicitar tu alta de seguro o suspenderlo, así como consulta de vigencia.",
         "detailedInfo": {
           "atomicId": "B3",
           "icon": "🏥",
@@ -619,10 +619,10 @@ const servicesData = [
           ]
         }
       },
-      { 
-        "id": "B4", 
-        "title": "Mediateca", 
-        "summary": "Centro de autoacceso para estudiar idiomas, tomar talleres y usar recursos digitales o impresos.", 
+      {
+        "id": "B4",
+        "title": "Mediateca",
+        "summary": "Centro de autoacceso para estudiar idiomas, tomar talleres y usar recursos digitales o impresos.",
         "detailedInfo": {
           "atomicId": "B4",
           "icon": "🎧",
@@ -669,10 +669,10 @@ const servicesData = [
           "actionText": "Trámite presencial en ventanilla de Servicios Escolares"
         }
       },
-      { 
-        "id": "G2", 
-        "title": "Baja Definitiva de la UNAM", 
-        "summary": "¿Cómo solicitar la baja definitiva de la UNAM?", 
+      {
+        "id": "G2",
+        "title": "Baja Definitiva de la UNAM",
+        "summary": "¿Cómo solicitar la baja definitiva de la UNAM?",
         "detailedInfo": {
           "atomicId": "G2",
           "icon": "🚪",
@@ -688,10 +688,10 @@ const servicesData = [
           "actionText": "El trámite es estrictamente presencial en Avenida del Imán #7."
         }
       },
-      { 
-        "id": "G3", 
-        "title": "Justificante por Periodo Extendido o Aviso de Condición", 
-        "summary": "Para estudiantes que posean algún padecimiento o deban ausentarse por más de 10 días al plantel.", 
+      {
+        "id": "G3",
+        "title": "Justificante por Periodo Extendido o Aviso de Condición",
+        "summary": "Para estudiantes que posean algún padecimiento o deban ausentarse por más de 10 días al plantel.",
         "detailedInfo": {
           "atomicId": "G3",
           "icon": "⏳",
@@ -707,10 +707,10 @@ const servicesData = [
           "actionText": "Un familiar debe notificar presencialmente a Servicios Escolares"
         }
       },
-      { 
-        "id": "G4", 
-        "title": "Suspensión Temporal de Estudios", 
-        "summary": "Procedimiento oficial del Art. 23 para suspender tus estudios justificadamente por un ciclo escolar.", 
+      {
+        "id": "G4",
+        "title": "Suspensión Temporal de Estudios",
+        "summary": "Procedimiento oficial del Art. 23 para suspender tus estudios justificadamente por un ciclo escolar.",
         "detailedInfo": {
           "atomicId": "G4",
           "icon": "🛑",
@@ -732,10 +732,10 @@ const servicesData = [
           "actionUrl": "https://drive.google.com/file/d/1svf7HO3Xwv_CWbWFt2JIYGv2-Q8M2bHG/view?usp=sharing"
         }
       },
-      { 
-        "id": "G5", 
-        "title": "Registro de Exámenes Extraordinarios", 
-        "summary": "Consulta las fechas en el calendario e ingresa al sistema SIEEL para inscribir tus materias.", 
+      {
+        "id": "G5",
+        "title": "Registro de Exámenes Extraordinarios",
+        "summary": "Consulta las fechas en el calendario e ingresa al sistema SIEEL para inscribir tus materias.",
         "detailedInfo": {
           "atomicId": "G5",
           "icon": "📆",
@@ -760,10 +760,10 @@ const servicesData = [
           ]
         }
       },
-      { 
-        "id": "G6", 
-        "title": "Lineamientos de Acceso al Plantel", 
-        "summary": "Reglas y protocolos para el ingreso peatonal, uso de credencial, visitantes y estacionamiento en el Plantel 8.", 
+      {
+        "id": "G6",
+        "title": "Lineamientos de Acceso al Plantel",
+        "summary": "Reglas y protocolos para el ingreso peatonal, uso de credencial, visitantes y estacionamiento en el Plantel 8.",
         "detailedInfo": {
           "atomicId": "G6",
           "icon": "🏫",
