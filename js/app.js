@@ -1,14 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Dark Mode Logic ---
     const themeToggleBtn = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
 
-    // Por defecto es claro (ignora preferencia del sistema si no hay elección guardada)
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
 
     themeToggleBtn.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark');
@@ -108,6 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentCategoryId = category.id;
                 renderTabs();
                 renderServices();
+                
+                // Reposicionar el scroll si las pestañas estaban ya en modo sticky
+                const sentinel = document.getElementById('pills-sentinel');
+                if (sentinel) {
+                    const rect = sentinel.getBoundingClientRect();
+                    // Si el centinela subió más alá del header (64px top), entonces la barra pills está pegada
+                    if (rect.top < 64) {
+                        window.scrollTo({
+                            top: window.scrollY + rect.top - 64, // Compensa el Navbar
+                            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+                        });
+                    }
+                }
             });
 
             li.appendChild(button);
@@ -613,5 +619,29 @@ document.addEventListener('DOMContentLoaded', () => {
             threshold: 0 
         });
         footerObserver.observe(footerElement);
+    }
+
+    // --- Scroll-to-Top Button Logic ---
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 350) {
+                // Mostrar botón subiendo y ganando opacidad
+                scrollToTopBtn.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+                scrollToTopBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            } else {
+                // Esconder deslizando hacia abajo y volviéndose transparente
+                scrollToTopBtn.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+                scrollToTopBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            }
+        });
+
+        // Regresar hacia arriba al clickear
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+            });
+        });
     }
 });

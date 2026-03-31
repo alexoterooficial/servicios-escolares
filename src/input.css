@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+
 
   /* Transición Simétrica Especializada para Modo Claro/Oscuro */
   *, *::before, *::after {
