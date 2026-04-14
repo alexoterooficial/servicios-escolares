@@ -177,7 +177,7 @@ const servicesData = [
           "atomicId": "A7",
           "icon": "🎭",
           "requirements": [
-            "Es un requisito obligatorio cursar y aprobar una actividad estética en 4to, 5to y 6to año para poder tramitar tu certificado.",
+            "Es un requisito obligatorio cursar y aprobar una actividad estética en 4to y 5to año para poder tramitar tu certificado.",
             "Deberás realizar tu inscripción a principios del ciclo escolar de acuerdo con las fechas oficiales."
           ],
           "steps": [
