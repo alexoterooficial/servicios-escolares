@@ -18,7 +18,7 @@
             }
         };
         updateTheme();
-        
+
         // Escucha cambios en tiempo real desde el OS (o el panel de DevTools)
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (!('theme' in localStorage)) {
@@ -39,9 +39,11 @@
     <header id="main-header"
         class="bg-white dark:bg-slate-800 sticky top-0 z-[80] border-b border-transparent dark:border-slate-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="http://prepa8.unam.mx/p8/" class="flex items-center space-x-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold rounded">
+            <a href="http://prepa8.unam.mx/p8/"
+                class="flex items-center space-x-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1356 768"
-                    class="h-10 w-auto fill-current text-black dark:text-white group-hover:opacity-90 transition-opacity" aria-label="Logotipo ENP 8" role="img">
+                    class="h-10 w-auto fill-current text-black dark:text-white group-hover:opacity-90 transition-opacity"
+                    aria-label="Logotipo ENP 8" role="img">
                     <g transform="translate(0,768) scale(0.1,-0.1)" stroke="none">
                         <path d="M3563 6286 c-117 -39 -281 -169 -334 -266 -11 -19 -32 -55 -47 -80
                         -51 -84 -82 -175 -82 -243 0 -34 -4 -100 -10 -147 -5 -47 -16 -206 -25 -355
@@ -203,45 +205,64 @@
                     </g>
                 </svg>
                 <div class="h-6 w-px bg-slate-300 dark:bg-slate-600"></div>
-                <h1 class="text-lg font-bold text-unam-blue dark:text-blue-400 tracking-tight leading-none group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
-                    Servicios Escolares <span class="block text-sm font-normal text-slate-600 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">ENP
+                <h1
+                    class="text-lg font-bold text-unam-blue dark:text-blue-400 tracking-tight leading-none group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
+                    Servicios Escolares <span
+                        class="block text-sm font-normal text-slate-600 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">ENP
                         Plantel 8</span>
                 </h1>
             </a>
 
             <!-- Navegación Desktop -->
-            <nav class="hidden xl:flex items-center space-x-6 text-[15px] font-medium text-slate-600 dark:text-slate-300">
-                <a href="http://prepa8.unam.mx/p8/" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+            <nav
+                class="hidden xl:flex items-center space-x-6 text-[15px] font-medium text-slate-600 dark:text-slate-300">
+                <a href="http://prepa8.unam.mx/p8/"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Inicio
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/alumnos" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/alumnos"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Estudiantado
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/padres" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/padres"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Padres
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/profesores" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/profesores"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Planta Docente
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/cultura" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/cultura"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Cultura
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Igualdad de Género
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/deportes" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/deportes"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Deportes
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/plantel" class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/plantel"
+                    class="relative hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Plantel
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </nav>
 
@@ -251,13 +272,15 @@
                     aria-label="Cambiar tema">
                     <div class="w-6 h-6 relative">
                         <!-- Sun Icon (Rotates OUT in light mode, IN on dark mode) -->
-                        <svg class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-0 scale-50 rotate-90 dark:opacity-100 dark:scale-100 dark:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-0 scale-50 rotate-90 dark:opacity-100 dark:scale-100 dark:rotate-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
                             </path>
                         </svg>
                         <!-- Moon Icon (Rotates IN on light mode, OUT on dark mode) -->
-                        <svg class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-100 scale-100 rotate-0 dark:opacity-0 dark:scale-50 dark:-rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-100 scale-100 rotate-0 dark:opacity-0 dark:scale-50 dark:-rotate-90"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
                             </path>
@@ -270,11 +293,17 @@
                     class="relative z-[80] xl:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-unam-gold transition-colors"
                     aria-label="Alternar menú">
                     <div class="w-6 h-6 relative">
-                        <svg id="icon-menu" class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-100 scale-100 rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <svg id="icon-menu"
+                            class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-100 scale-100 rotate-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                        <svg id="icon-close" class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-0 scale-0 -rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <svg id="icon-close"
+                            class="absolute inset-0 w-6 h-6 transform transition-all duration-300 origin-center opacity-0 scale-0 -rotate-90"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </div>
                 </button>
@@ -283,41 +312,61 @@
     </header>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobileDrawerBackdrop" class="fixed top-16 inset-x-0 bottom-0 bg-slate-900/50 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true"></div>
-    <div id="mobileDrawerPanel" class="fixed top-16 right-0 bottom-0 z-[70] w-full max-w-xs bg-white dark:bg-slate-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col invisible" tabindex="-1">
+    <div id="mobileDrawerBackdrop"
+        class="fixed top-16 inset-x-0 bottom-0 bg-slate-900/50 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300"
+        aria-hidden="true"></div>
+    <div id="mobileDrawerPanel"
+        class="fixed top-16 right-0 bottom-0 z-[70] w-full max-w-xs bg-white dark:bg-slate-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col invisible"
+        tabindex="-1">
         <div class="flex-1 overflow-y-auto px-6 py-8">
             <nav class="flex flex-col space-y-6">
-                <a href="http://prepa8.unam.mx/p8/" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Inicio
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/alumnos" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/alumnos"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Estudiantado
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/padres" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/padres"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Padres
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/profesores" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/profesores"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Planta Docente
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/cultura" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/cultura"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Cultura
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/igualdad_de_genero"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Igualdad de Género
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/deportes" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/deportes"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Deportes
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="http://prepa8.unam.mx/p8/plantel" class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
+                <a href="http://prepa8.unam.mx/p8/plantel"
+                    class="relative w-max text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-unam-blue dark:hover:text-blue-400 transition-colors py-1 group">
                     Plantel
-                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-unam-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </nav>
         </div>
@@ -329,7 +378,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Hero Section -->
             <section
-                class="mb-10 md:mb-16 bg-white dark:bg-slate-900 rounded-[2rem] p-8 md:p-14 shadow-sm border border-gray-100 dark:border-slate-800 relative overflow-hidden flex flex-col items-center text-center">
+                class="mb-4 md:mb-6 bg-white dark:bg-slate-900 rounded-[2rem] p-6 md:p-10 shadow-sm border border-gray-100 dark:border-slate-800 relative overflow-hidden flex flex-col items-center text-center">
 
                 <!-- Background Image -->
                 <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0 pointer-events-none"
@@ -341,20 +390,57 @@
                     class="absolute inset-0 bg-slate-900/60 dark:bg-slate-900/70 z-0 pointer-events-none backdrop-blur-[2px]">
                 </div>
 
-                <div class="relative z-10 max-w-3xl flex flex-col items-center">
+                <div class="relative z-10 max-w-3xl flex flex-col items-center w-full">
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full bg-white/90 dark:bg-slate-800/90 text-unam-blue dark:text-blue-300 text-xs font-bold mb-6 tracking-widest uppercase shadow-sm border border-blue-200 dark:border-slate-700 backdrop-blur-md">Portal
                         del Estudiante</span>
                     <h2
-                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-200 dark:from-blue-300 dark:via-blue-400 dark:to-blue-100 mb-6 tracking-tight leading-tight pt-2 pb-2 drop-shadow-md">
+                        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-200 dark:from-blue-300 dark:via-blue-400 dark:to-blue-100 mb-4 sm:mb-6 tracking-tight leading-tight pt-2 pb-2 drop-shadow-md">
                         Servicios Escolares</h2>
-                    <p
-                        class="text-lg md:text-xl text-slate-100 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto drop-shadow-md">
-                        Encuentra y gestiona rápidamente constancias, calificaciones, calendarios, seguros y más
-                        recursos de
-                        la Escuela Nacional Preparatoria Plantel 8.</p>
+                    <!-- Info Groups (Agrupación Lógica y Visual) -->
+                    <div
+                        class="mt-4 md:mt-6 flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-6 w-full">
+
+                        <!-- Grupo: Identificación del Plantel -->
+                        <div
+                            class="flex items-center gap-4 sm:gap-6 text-[10px] sm:text-[11px] md:text-xs tracking-tight">
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-unam-gold font-black uppercase text-[7px] sm:text-[8px] opacity-80 tracking-widest">CCT</span>
+                                <span class="text-white dark:text-slate-100 font-bold">09UBH0022G</span>
+                            </div>
+                            <div class="w-px h-5 bg-white/10"></div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-unam-gold font-black uppercase text-[7px] sm:text-[8px] opacity-80 tracking-widest">Clave
+                                    UNAM</span>
+                                <span class="text-white dark:text-slate-100 font-bold">452-028</span>
+                            </div>
+                        </div>
+
+                        <!-- Grupo: Horario de Atención -->
+
+                        <div
+                            class="flex items-center gap-4 sm:gap-6 text-[10px] sm:text-[11px] md:text-xs tracking-tight">
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-unam-gold font-black uppercase text-[7px] sm:text-[8px] opacity-80 tracking-widest">Matutino</span>
+                                <span class="text-white dark:text-slate-100 font-bold whitespace-nowrap">09:00 -
+                                    13:00 <small class="opacity-60 font-normal">HRS</small></span>
+                            </div>
+                            <div class="w-px h-5 bg-white/10"></div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-unam-gold font-black uppercase text-[7px] sm:text-[8px] opacity-80 tracking-widest">Vespertino</span>
+                                <span class="text-white dark:text-slate-100 font-bold whitespace-nowrap">17:00 -
+                                    20:00 <small class="opacity-60 font-normal">HRS</small></span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
+        </div>
+        </section>
         </div>
 
         <!-- Category Navigation -->
@@ -362,7 +448,8 @@
         <nav id="pills-nav" aria-label="Categorías de servicios"
             class="w-full sticky top-16 z-40 bg-gray-50/95 dark:bg-slate-900/95 backdrop-blur-md pt-4 pb-2 mb-4 md:mb-8 border-b border-transparent shadow-[0_4px_6px_-1px_currentColor] shadow-transparent">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <ul id="categories-tabs" class="flex space-x-2 md:space-x-4 overflow-x-auto pb-2 scrollbar-hide w-full min-h-[44px]"
+                <ul id="categories-tabs"
+                    class="flex space-x-2 md:space-x-4 overflow-x-auto pb-2 scrollbar-hide w-full min-h-[44px]"
                     role="tablist">
                     <!-- Tabs will be rendered here -->
                 </ul>
@@ -375,93 +462,7 @@
                 <!-- Services lists will be rendered here -->
             </div>
 
-            <!-- Institutional Information Section -->
-            <section class="mt-12 mb-24">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- School Registry Info -->
-                    <div
-                        class="bg-white dark:bg-slate-800 rounded-[2rem] p-8 md:p-10 border border-gray-200 dark:border-slate-700 shadow-lg shadow-gray-200/50 dark:shadow-none flex flex-col justify-center">
-                        <div class="flex items-center space-x-4 mb-8 text-unam-blue dark:text-blue-400">
-                            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-black uppercase tracking-tight">Registro Escolar</h3>
-                        </div>
-                        <div class="space-y-5">
-                            <div
-                                class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-gray-50 dark:border-slate-700/50 pb-4">
-                                <span
-                                    class="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">RVOE</span>
-                                <span class="text-lg font-bold text-slate-700 dark:text-slate-200">No aplica para la
-                                    SEP</span>
-                            </div>
-                            <div
-                                class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-gray-50 dark:border-slate-700/50 pb-4">
-                                <span
-                                    class="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">CCT</span>
-                                <span
-                                    class="text-lg font-bold text-slate-700 dark:text-slate-200 tracking-wider">09UBH0022G</span>
-                            </div>
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                                <span
-                                    class="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Clave
-                                    UNAM</span>
-                                <span
-                                    class="text-2xl font-black text-unam-blue dark:text-blue-400 tracking-tighter">452-028</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Window Service Hours -->
-                    <div
-                        class="bg-white dark:bg-slate-800 rounded-[2rem] p-8 md:p-10 border border-gray-200 dark:border-slate-700 shadow-lg shadow-gray-200/50 dark:shadow-none flex flex-col justify-center">
-                        <div class="flex items-center space-x-4 mb-8 text-unam-blue dark:text-blue-400">
-                            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-black uppercase tracking-tight">Horario de Ventanillas</h3>
-                        </div>
-                        <div class="space-y-8">
-                            <p
-                                class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-unam-blue dark:text-blue-300 text-sm font-bold border border-blue-100 dark:border-blue-900/50">
-                                <span
-                                    class="w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400 mr-2 animate-pulse"></span>
-                                Lunes a Viernes
-                            </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div
-                                    class="bg-slate-50 dark:bg-slate-900/40 p-6 rounded-3xl border border-gray-100 dark:border-slate-700/50">
-                                    <span
-                                        class="block text-slate-400 dark:text-slate-500 text-xs uppercase font-extrabold mb-2 tracking-widest">Turno
-                                        Matutino</span>
-                                    <span
-                                        class="text-3xl font-black tracking-tighter block text-slate-800 dark:text-white">09:00
-                                        - 13:00</span>
-                                    <span
-                                        class="text-xs text-blue-600 dark:text-blue-400 font-bold mt-1 block">HORAS</span>
-                                </div>
-                                <div
-                                    class="bg-slate-50 dark:bg-slate-900/40 p-6 rounded-3xl border border-gray-100 dark:border-slate-700/50">
-                                    <span
-                                        class="block text-slate-400 dark:text-slate-500 text-xs uppercase font-extrabold mb-2 tracking-widest">Turno
-                                        Vespertino</span>
-                                    <span
-                                        class="text-3xl font-black tracking-tighter block text-slate-800 dark:text-white">17:00
-                                        - 20:00</span>
-                                    <span
-                                        class="text-xs text-blue-600 dark:text-blue-400 font-bold mt-1 block">HORAS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
 
     </main>
@@ -500,52 +501,85 @@
     </div>
 
     <!-- Footer Refined (Visual Harmony + Social Links) -->
-    <footer class="dark bg-slate-900 dark:bg-slate-800 text-slate-400 pt-24 pb-12 transition-colors duration-300 border-t border-slate-800 dark:border-slate-700">
+    <footer
+        class="dark bg-slate-900 dark:bg-slate-800 text-slate-400 pt-24 pb-12 transition-colors duration-300 border-t border-slate-800 dark:border-slate-700">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Global Links Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-                
+
                 <!-- Col 1: Contacto y Dirección -->
                 <div class="space-y-6 text-base">
                     <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider">Contacto</h4>
                     <div class="space-y-4 leading-relaxed">
-                        <a href="https://www.google.com/maps/place/Escuela+Nacional+Preparatoria+8+%22Miguel+E.+Schulz%22/@19.3670549,-99.1973287,17z/data=!3m1!4b1!4m5!3m4!1s0x85d200270225ae85:0xe08a1d01f9faf00c!8m2!3d19.3670549!4d-99.19514" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="text-slate-700 dark:text-slate-200 hover:text-unam-blue dark:hover:text-white transition-colors block group">
-                            <span class="underline decoration-slate-300 dark:decoration-slate-700 group-hover:decoration-unam-blue dark:group-hover:decoration-white">Av. Lomas de Plateros s/n, esq. Francisco P. Miranda. Col. Merced Gómez, Alc. Álvaro Obregón. C.P. 01600, CDMX.</span>
+                        <a href="https://www.google.com/maps/place/Escuela+Nacional+Preparatoria+8+%22Miguel+E.+Schulz%22/@19.3670549,-99.1973287,17z/data=!3m1!4b1!4m5!3m4!1s0x85d200270225ae85:0xe08a1d01f9faf00c!8m2!3d19.3670549!4d-99.19514"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-slate-700 dark:text-slate-200 hover:text-unam-blue dark:hover:text-white transition-colors block group">
+                            <span
+                                class="underline decoration-slate-300 dark:decoration-slate-700 group-hover:decoration-unam-blue dark:group-hover:decoration-white">Av.
+                                Lomas de Plateros s/n, esq. Francisco P. Miranda. Col. Merced Gómez, Alc. Álvaro
+                                Obregón. C.P. 01600, CDMX.</span>
                         </a>
                         <ul class="space-y-3 pt-2">
-                            <li><a href="mailto:buzon.p8@enp.unam.mx" class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2">
-                                <svg class="w-5 h-5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                                buzon.p8@enp.unam.mx
-                            </a></li>
-                            <li><a href="tel:5555936714" class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2 font-bold">55-5593-6714</a></li>
-                            <li><a href="tel:5556800950" class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2 font-bold">55-5680-0950</a></li>
+                            <li><a href="mailto:buzon.p8@enp.unam.mx"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2">
+                                    <svg class="w-5 h-5 opacity-70" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    buzon.p8@enp.unam.mx
+                                </a></li>
+                            <li><a href="tel:5555936714"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2 font-bold">55-5593-6714</a>
+                            </li>
+                            <li><a href="tel:5556800950"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors flex items-center gap-2 font-bold">55-5680-0950</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Col 2: Gestión y Seguridad -->
                 <div class="text-base text-slate-700 dark:text-slate-400">
-                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">Gestión y Seguridad</h4>
+                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">Gestión y
+                        Seguridad</h4>
                     <ul class="space-y-4">
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdTgOwroiOjouhBf3OANx9aF1OwU5oF86GcD8HJ9AKuG2pNGw/viewform" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Oficina Jurídica</a></li>
-                        <li><a href="http://prepa8.unam.mx/p8/clsa" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Comisión Local de Seguridad</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdTgOwroiOjouhBf3OANx9aF1OwU5oF86GcD8HJ9AKuG2pNGw/viewform"
+                                target="_blank"
+                                class="hover:text-unam-blue dark:hover:text-white transition-colors">Oficina
+                                Jurídica</a></li>
+                        <li><a href="http://prepa8.unam.mx/p8/clsa" target="_blank"
+                                class="hover:text-unam-blue dark:hover:text-white transition-colors">Comisión Local de
+                                Seguridad</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 3: Privacidad -->
                 <div class="text-base text-slate-700 dark:text-slate-400">
-                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">Privacidad</h4>
+                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">
+                        Privacidad</h4>
                     <ul class="space-y-4">
-                        <li><a href="https://drive.google.com/file/d/1_tkFiBSxu6sUCLmWxUt3lMO1rg34jvMs/view?usp=sharing" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso Simplificado</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Rf89q1ySFfzB8tEs61N5RgLXhIh9r2ul/view?usp=sharing" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso Integral</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_tkFiBSxu6sUCLmWxUt3lMO1rg34jvMs/view?usp=sharing"
+                                target="_blank"
+                                class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso
+                                Simplificado</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Rf89q1ySFfzB8tEs61N5RgLXhIh9r2ul/view?usp=sharing"
+                                target="_blank"
+                                class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso Integral</a>
+                        </li>
                         <li class="pt-4">
-                            <span class="text-slate-500 dark:text-slate-500 font-bold text-xs uppercase block mb-3">Videovigilancia (CCTV)</span>
+                            <span
+                                class="text-slate-500 dark:text-slate-500 font-bold text-xs uppercase block mb-3">Videovigilancia
+                                (CCTV)</span>
                             <div class="flex flex-col space-y-3 pl-0">
-                                <a href="https://drive.google.com/file/d/1uzSS2X9uInkSqutPWwfv2mn9Q5CnYent/view?usp=sharing" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso Simplificado</a>
-                                <a href="https://drive.google.com/file/d/1pKZt8MdPWsNW7xgAw99uq-t0gH5XlTUp/view?usp=sharing" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso Integral</a>
+                                <a href="https://drive.google.com/file/d/1uzSS2X9uInkSqutPWwfv2mn9Q5CnYent/view?usp=sharing"
+                                    target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso
+                                    Simplificado</a>
+                                <a href="https://drive.google.com/file/d/1pKZt8MdPWsNW7xgAw99uq-t0gH5XlTUp/view?usp=sharing"
+                                    target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Aviso
+                                    Integral</a>
                             </div>
                         </li>
                     </ul>
@@ -553,56 +587,105 @@
 
                 <!-- Col 4: Planteles ENP -->
                 <div>
-                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">Planteles de la ENP</h4>
+                    <h4 class="text-unam-blue dark:text-white font-bold text-sm uppercase tracking-wider mb-6">Planteles
+                        de la ENP</h4>
                     <div class="grid grid-cols-2 gap-x-6 gap-y-4 text-sm text-slate-700 dark:text-slate-400">
                         <ul class="space-y-3">
-                            <li><a href="http://enp.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">DGENP</a></li>
-                            <li><a href="http://enp1.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 1</a></li>
-                            <li><a href="http://www.prepa2.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 2</a></li>
-                            <li><a href="http://enp3.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 3</a></li>
-                            <li><a href="http://enp4.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 4</a></li>
+                            <li><a href="http://enp.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">DGENP</a></li>
+                            <li><a href="http://enp1.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 1</a>
+                            </li>
+                            <li><a href="http://www.prepa2.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 2</a>
+                            </li>
+                            <li><a href="http://enp3.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 3</a>
+                            </li>
+                            <li><a href="http://enp4.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 4</a>
+                            </li>
                         </ul>
                         <ul class="space-y-3">
-                            <li><a href="https://www.enp5.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 5</a></li>
-                            <li><a href="http://www.prepa6.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 6</a></li>
-                            <li><a href="http://www.prepa7.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 7</a></li>
-                            <li><a href="http://www.prepa9.unam.mx/" target="_blank" class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 9</a></li>
+                            <li><a href="https://www.enp5.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 5</a>
+                            </li>
+                            <li><a href="http://www.prepa6.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 6</a>
+                            </li>
+                            <li><a href="http://www.prepa7.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 7</a>
+                            </li>
+                            <li><a href="http://www.prepa9.unam.mx/" target="_blank"
+                                    class="hover:text-unam-blue dark:hover:text-white transition-colors">Prepa 9</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom Section -->
-            <div class="pt-12 border-t border-gray-100 dark:border-slate-700 flex flex-col md:flex-row justify-between items-center gap-10">
+            <div
+                class="pt-12 border-t border-gray-100 dark:border-slate-700 flex flex-col md:flex-row justify-between items-center gap-10">
                 <!-- Redes Sociales -->
                 <div class="flex items-center gap-6">
-                    <a href="http://www.facebook.com/pages/Preparatoria-N8-ENP-UNAM-Miguel-E-Schulz-sitio-oficial/149262298437235" target="_blank" class="text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <a href="http://www.facebook.com/pages/Preparatoria-N8-ENP-UNAM-Miguel-E-Schulz-sitio-oficial/149262298437235"
+                        target="_blank"
+                        class="text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
                     </a>
-                    <a href="https://x.com/Prepa8_UNAM" target="_blank" class="text-slate-400 hover:text-black dark:hover:text-white transition-colors">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.489h2.039L6.486 3.24H4.298l13.311 17.402z"/></svg>
+                    <a href="https://x.com/Prepa8_UNAM" target="_blank"
+                        class="text-slate-400 hover:text-black dark:hover:text-white transition-colors">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.489h2.039L6.486 3.24H4.298l13.311 17.402z" />
+                        </svg>
                     </a>
-                    <a href="http://www.youtube.com/@P8OrgullosamentePlural" target="_blank" class="text-slate-400 hover:text-red-600 transition-colors">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <a href="http://www.youtube.com/@P8OrgullosamentePlural" target="_blank"
+                        class="text-slate-400 hover:text-red-600 transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
                     </a>
-                    <a href="http://www.instagram.com/enp8.miguel_e_schulz/?hl=es" target="_blank" class="text-slate-400 hover:text-pink-600 transition-colors">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <a href="http://www.instagram.com/enp8.miguel_e_schulz/?hl=es" target="_blank"
+                        class="text-slate-400 hover:text-pink-600 transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
                     </a>
-                    <a href="http://www.tiktok.com/@enp8mixcoac" target="_blank" class="text-slate-400 hover:text-black dark:hover:text-white transition-colors">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 3.18-4.51v-3.5a6.32 6.32 0 0 0-5.39 10.69A6.33 6.33 0 0 0 15.82 16v-7.38a8.17 8.17 0 0 0 4.77 1.57V6.69z"/></svg>
+                    <a href="http://www.tiktok.com/@enp8mixcoac" target="_blank"
+                        class="text-slate-400 hover:text-black dark:hover:text-white transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 3.18-4.51v-3.5a6.32 6.32 0 0 0-5.39 10.69A6.33 6.33 0 0 0 15.82 16v-7.38a8.17 8.17 0 0 0 4.77 1.57V6.69z" />
+                        </svg>
                     </a>
-                    <a href="http://whatsapp.com/channel/0029Vamjd1VH5JLwwcfLRS2h" target="_blank" class="text-slate-400 hover:text-green-600 transition-colors">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.431 5.63 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <a href="http://whatsapp.com/channel/0029Vamjd1VH5JLwwcfLRS2h" target="_blank"
+                        class="text-slate-400 hover:text-green-600 transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.431 5.63 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
                     </a>
                 </div>
 
                 <!-- Footer Legend -->
                 <div class="max-w-4xl">
                     <p class="text-[0.85rem] md:text-base leading-relaxed text-slate-500 dark:text-slate-400">
-                        Universidad Nacional Autónoma de México, Escuela Nacional Preparatoria Plantel 8 "Miguel E. Schulz". Todos los derechos reservados 2026. Hecho en México. Este sitio puede ser reproducido con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica, de otra forma, se requiere permiso previo escrito de la Institución. 
+                        Universidad Nacional Autónoma de México, Escuela Nacional Preparatoria Plantel 8 "Miguel E.
+                        Schulz". Todos los derechos reservados 2026. Hecho en México. Este sitio puede ser reproducido
+                        con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su
+                        dirección electrónica, de otra forma, se requiere permiso previo escrito de la Institución.
                         <span class="block mt-4 text-slate-500 dark:text-slate-400">
-                            Desarrollado por: <span class="font-semibold text-slate-700 dark:text-slate-200">Alexander Daniel Otero García</span><br>
-                            <span class="font-light text-slate-400 dark:text-slate-500 text-sm">ETE en Computación | UNAM ENP 8</span>
+                            Desarrollado por: <span class="font-semibold text-slate-700 dark:text-slate-200">Alexander
+                                Daniel Otero García</span><br>
+                            <span class="font-light text-slate-400 dark:text-slate-500 text-sm">ETE en Computación |
+                                UNAM ENP 8 | Generación 2026</span>
                         </span>
                     </p>
                 </div>
@@ -611,7 +694,8 @@
     </footer>
 
     <!-- Scroll-to-Top Button -->
-    <button id="scrollToTopBtn" aria-label="Volver al inicio de la página" tabindex="0" class="fixed bottom-6 right-6 z-40 p-3.5 border border-gray-200 dark:border-slate-700 rounded-full text-unam-blue bg-white shadow-lg hover:shadow-xl hover:text-blue-700 dark:text-unam-gold dark:bg-slate-900 hover:-translate-y-1 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-unam-blue dark:focus-visible:ring-unam-gold">
+    <button id="scrollToTopBtn" aria-label="Volver al inicio de la página" tabindex="0"
+        class="fixed bottom-6 right-6 z-40 p-3.5 border border-gray-200 dark:border-slate-700 rounded-full text-unam-blue bg-white shadow-lg hover:shadow-xl hover:text-blue-700 dark:text-unam-gold dark:bg-slate-900 hover:-translate-y-1 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-unam-blue dark:focus-visible:ring-unam-gold">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
